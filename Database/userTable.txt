@@ -1,0 +1,15 @@
+USE Homework;
+
+CREATE TABLE `users` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `username` VARCHAR(50) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
+    `birthday` DATE,
+    `email` VARCHAR(255),
+    `age` TINYINT UNSIGNED,
+    `login_date` DATETIME,
+    `is_online` BOOLEAN,
+    `profile_image` LONGBLOB,
+     PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4;
+
