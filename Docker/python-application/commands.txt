@@ -1,0 +1,5 @@
+First step need to create image for the python application
+Command => docker build -t python-app .
+
+Need to run container
+Command => docker run -it python-app
