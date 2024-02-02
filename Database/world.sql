@@ -1,0 +1,23 @@
+USE world;
+DESCRIBE `city`;
+SELECT DISTINCT name FROM `city`;
+SHOW COLUMNS FROM `city`;
+SELECT * FROM city ORDER BY `name`;
+SELECT * FROM country ORDER BY `name` DESC;
+SELECT * FROM city WHERE `name` LIKE '%a';
+SELECT * FROM city WHERE `name` LIKE 'a%b';
+SELECT * FROM city WHERE `name` LIKE '_oscow';
+SELECT * FROM city WHERE `name` NOT LIKE 'b%';
+SELECT * FROM city WHERE `name` LIKE 'Arm%';
+SELECT * FROM country WHERE `Capital` NOT LIKE 'b%';
+SELECT * FROM country WHERE `name` IN ('Armenia','France');
+SELECT * FROM city WHERE `name` IN ('Yerevan', 'Moscow');
+SELECT * FROM country WHERE `id` IN (1,7);
+SHOW tables;
+DESCRIBE `country`;
+SELECT * FROM city WHERE `Population` IN (100000, 500000);
+DESCRIBE countrylanguage;
+SELECT Percentage FROM countrylanguage;
+SELECT  * FROM `countrylanguage` WHERE `percentage` BETWEEN 1 and 1.5;
+SELECT  * FROM `countrylanguage` WHERE `percentage` NOT BETWEEN 1 and 10;
+
